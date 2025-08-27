@@ -1,34 +1,93 @@
-{
-  "name": "astro-netlify-platform-starter",
-  "type": "module",
-  "version": "0.1.0",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/netlify": "^6.2.3",
-    "@astrojs/react": "^4.2.1",
-    "@fontsource-variable/inter": "^5.2.5",
-    "@netlify/blobs": "^8.2.0",
-    "@netlify/functions": "^2.8.2",
-    "@tailwindcss/vite": "^4.0.14",
-    "@types/react": "^18.2.79",
-    "@types/react-dom": "^18.2.25",
-    "astro": "^5.5.3",
-    "blobshape": "^1.0.0",
-    "marked": "^13.0.0",
-    "marked-shiki": "^1.2.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "tailwindcss": "^4.0.14",
-    "unique-names-generator": "^4.7.1"
-  },
-  "devDependencies": {
-    "@types/blobshape": "^1.0.3",
-    "@types/node": "^20.12.7"
-  }
-}
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu • TRS Shree Radhe Sweets & Bakery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <h1>TRS Shree Radhe Sweets & Bakery</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="menu.html" class="active">Menu</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="shop-meta">
+    <p><strong>Mobile:</strong> 8219354284 &nbsp;|&nbsp; <strong>Distt:</strong> Mandi</p>
+  </div>
+
+  <!-- Sweets -->
+  <section class="menu-section">
+    <h2>🍬 Sweets</h2>
+    <div class="menu-grid">
+      <div class="menu-item"><span>Motichoor Laddoo</span><b>₹350/kg</b></div>
+      <div class="menu-item"><span>Besan Laddoo</span><b>₹330/kg</b></div>
+      <div class="menu-item"><span>Boondi Laddoo</span><b>₹300/kg</b></div>
+      <div class="menu-item"><span>Dodha Burfi</span><b>₹500/kg</b></div>
+      <div class="menu-item"><span>Kaju Burfi</span><b>₹950/kg</b></div>
+      <div class="menu-item"><span>Rasgulla</span><b>₹320/kg</b></div>
+      <div class="menu-item"><span>Cham Cham</span><b>₹320/kg</b></div>
+      <div class="menu-item"><span>Hot Gulab Jamun</span><b>₹40/pcs</b></div>
+    </div>
+  </section>
+
+  <!-- Pastries / Cakes -->
+  <section class="menu-section">
+    <h2>🍰 Pastries & Cakes</h2>
+    <div class="menu-grid">
+      <div class="menu-item"><span>Strawberry Pastry</span><b>₹30</b></div>
+      <div class="menu-item"><span>Mango Pastry</span><b>₹30</b></div>
+      <div class="menu-item"><span>Red Velvet Pastry</span><b>₹40</b></div>
+
+      <div class="menu-item"><span>Pineapple Cake (½kg / 1kg)</span><b>₹300 / ₹600</b></div>
+      <div class="menu-item"><span>Black Forest (½kg / 1kg)</span><b>₹400 / ₹750</b></div>
+      <div class="menu-item"><span>Strawberry Cake (½kg / 1kg)</span><b>₹350 / ₹600</b></div>
+      <div class="menu-item"><span>Mango Cake (½kg / 1kg)</span><b>₹380 / ₹580</b></div>
+      <div class="menu-item"><span>Choco Chips (½kg / 1kg)</span><b>₹350 / ₹650</b></div>
+    </div>
+  </section>
+
+  <!-- Chinese -->
+  <section class="menu-section">
+    <h2>🥢 Chinese</h2>
+    <div class="menu-grid">
+      <div class="menu-item"><span>Veg Noodles</span><b>₹100</b></div>
+      <div class="menu-item"><span>Momos (Steam/Fried)</span><b>₹80</b></div>
+      <div class="menu-item"><span>Honey Chilli Potato</span><b>₹80</b></div>
+      <div class="menu-item"><span>Veg Manchurian</span><b>₹120</b></div>
+      <div class="menu-item"><span>Chilly Cheese</span><b>₹150</b></div>
+      <div class="menu-item"><span>Veg Fried Rice</span><b>₹100</b></div>
+    </div>
+  </section>
+
+  <!-- Breakfast / Paratha -->
+  <section class="menu-section">
+    <h2>🍳 Breakfast (Paratha Special)</h2>
+    <div class="menu-grid">
+      <div class="menu-item"><span>Aloo Paratha</span><b>₹30</b></div>
+      <div class="menu-item"><span>Mix Paratha</span><b>₹50</b></div>
+      <div class="menu-item"><span>Gobi Paratha</span><b>₹40</b></div>
+      <div class="menu-item"><span>Onion Paratha</span><b>₹120</b></div>
+      <div class="menu-item"><span>Paneer Paratha</span><b>₹60</b></div>
+      <div class="menu-item"><span>Paneer Paratha Combo</span><b>₹70</b></div>
+    </div>
+  </section>
+
+  <!-- Note / Custom line -->
+  <div class="note">
+    <p>Note: Prices may vary on customization & cake designs.</p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 TRS Shree Radhe Sweets & Bakery</p>
+</footer>
+</body>
+</html>
